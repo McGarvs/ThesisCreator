@@ -1,21 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
-/* Thesis CSS */
-/* button {
-  display: block;
-  vertical-align: middle;
-  margin-left: 1em;
-} */
-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.hidden {
-  display: none;
-}
-
 /*
 	Arcana by HTML5 UP
 	html5up.net | @ajlkn
