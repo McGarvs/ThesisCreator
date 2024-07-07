@@ -109,7 +109,7 @@
 		}
 
 	body {
-		background: _palette(bg) url('images/bg01.png');
+		// background: _palette(bg) url('images/bg01.png');
 
 		// Stops initial animations until page loads.
 			&.is-preload {
@@ -447,7 +447,7 @@
 			text-align: center;
 			cursor: default;
 			background-color: _palette(accent, bg);
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
+			// @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
 			color: _palette(accent, fg);
 			border-radius: 100%;
 			display: inline-block;
@@ -661,7 +661,7 @@
 
 			thead {
 				background-color: #555555;
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
+				// @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
 				color: #fff;
 			}
 
@@ -682,7 +682,7 @@
 	.button {
 		@include vendor('appearance', 'none');
 		@include vendor('transition', 'background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out');
-		@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
+		// @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
 		background-color: _palette(accent, bg);
 		border-radius: _size(radius);
 		border: 0;
@@ -773,7 +773,7 @@
 		text-align: center;
 		padding: 3em 0 0 0;
 		background-color: #fff;
-		background-image:			url('images/bg02.png'),		url('images/bg02.png'),		url('images/bg01.png');
+		// background-image:			url('images/bg02.png'),		url('images/bg02.png'),		url('images/bg01.png');
 		background-position:		top left,					top left,					top left;
 		background-size:			100% 6em,					100% 6em,					auto;
 		background-repeat:			no-repeat,					no-repeat,					repeat;
@@ -793,7 +793,7 @@
 	#nav {
 		cursor: default;
 		background-color: #333;
-		@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3))', 'url("images/bg01.png")'));
+		// @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3))', 'url("images/bg01.png")'));
 		padding: 0;
 
 		&:after {
@@ -802,7 +802,7 @@
 			width: 100%;
 			height: 0.75em;
 			background-color: _palette(accent, bg);
-			background-image: url("images/bg01.png");
+			// background-image: url("images/bg01.png");
 		}
 
 		> ul {
@@ -845,7 +845,7 @@
 						left: 50%;
 						margin-left: -0.375em;
 						background-color: _palette(accent, bg);
-						background-image: url("images/bg01.png");
+						// background-image: url("images/bg01.png");
 					}
 
 					a {
@@ -875,7 +875,7 @@
 /* Dropotron */
 
 	.dropotron {
-		@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0))', 'url("images/bg01.png")'));
+		// @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0))', 'url("images/bg01.png")'));
 		background-color: #333;
 		border-radius: _size(radius);
 		color: #fff;
@@ -914,7 +914,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url('../../images/banner.jpg');
+		// background-image: url('../../images/banner.jpg');
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
@@ -968,7 +968,7 @@
 
 		&.style2 {
 			background-color:		#fff;
-			background-image:		url('images/bg02.png'),			url('images/bg03.png'),			url('images/bg01.png');
+			// background-image:		url('images/bg02.png'),			url('images/bg03.png'),			url('images/bg01.png');
 			background-position:	top left,						bottom left,					top left;
 			background-size:		100% 6em,						100% 6em,						auto;
 			background-repeat:		no-repeat,						no-repeat,						repeat;
@@ -1302,7 +1302,7 @@
 				width: 100%;
 				z-index: _misc(z-index-base) + 1;
 				background-color: #333;
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3))', 'url("images/bg01.png")'));
+				// @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3))', 'url("images/bg01.png")'));
 				height: 44px;
 				line-height: 44px;
 				box-shadow: 0 4px 0 0 _palette(accent, bg);
@@ -1353,7 +1353,7 @@
 			#navPanel {
 				background-color: #1f1f1f;
 				box-shadow: inset -1px 0 3px 0 rgba(0,0,0,0.5);
-				@include vendor('background-image', ('linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
+				// @include vendor('background-image', ('linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
 				@include vendor('backface-visibility', 'hidden');
 				@include vendor('transform', 'translateX(#{_size(navPanel) * -1})');
 				@include vendor('transition', ('transform #{_duration(navPanel)} ease'));
