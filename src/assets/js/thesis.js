@@ -1,30 +1,32 @@
-(function($) {
-  function isEmpty(obj) {
-    for (const key in obj) {
-      if (obj[key] !== "") {
-        return false;
-      }
-    }
-    return true;
-  }
-  const exampleThesis = {
-    prompt: "Was the New Deal of the 1930s a liberal plan to create a welfare state in America, or was it a conservative defense of American capitalism?",
-    title: "New Deal: Welfare State or Savior of Capitalism",
-    position: "The New Deal is best understood as a defense of American capitalism",
-    qualification: "Despite its work relief elements and large government programs,",
-    reason: "because its main programs attempted to create a stable environment for private enterprise.",
-    thesis: "Despite its work relief elements and large government programs, the New Deal is best understood as a defense of American capitalism because its main programs attempted to create a stable environment for private enterprise.",
-  }
-  const draftThesis = {
-    prompt: "",
-    title: "",
-    position: "",
-    qualification: "",
-    reason: "",
-    thesis: "",
-  }
+const exampleThesis = {
+  prompt: "Was the New Deal of the 1930s a liberal plan to create a welfare state in America, or was it a conservative defense of American capitalism?",
+  title: "New Deal: Welfare State or Savior of Capitalism",
+  position: "The New Deal is best understood as a defense of American capitalism",
+  qualification: "Despite its work relief elements and large government programs,",
+  reason: "because its main programs attempted to create a stable environment for private enterprise.",
+  thesis: "Despite its work relief elements and large government programs, the New Deal is best understood as a defense of American capitalism because its main programs attempted to create a stable environment for private enterprise.",
+};
 
-  // Reset certain page elements on (re)load because firefox caches it
+const draftThesis = {
+  prompt: "",
+  title: "",
+  position: "",
+  qualification: "",
+  reason: "",
+  thesis: "",
+};
+
+function isEmpty(obj) {
+  for (const key in obj) {
+    if (obj[key] !== "") {
+      return false;
+    }
+  }
+  return true;
+};
+
+(function($) {
+  // Reset certain page elements for Firefox soft reloads
   $("textarea").val("");
   $("#createThesisButton").prop('disabled', true);
 
