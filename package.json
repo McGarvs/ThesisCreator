@@ -1,0 +1,25 @@
+{
+  "name": "ThesisCreator",
+  "version": "1.0.0",
+  "description": "The new version of the thesis creator for https://johnmcgarvey.com/apworld/student/thesiscreator.html",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McGarvs/ThesisCreator.git"
+  },
+  "keywords": [],
+  "author": "McGarvs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McGarvs/ThesisCreator/issues"
+  },
+  "homepage": "https://github.com/McGarvs/ThesisCreator#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "eslint": "^9.6.0"
+  }
+}
