@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Thesis Creator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/thesis.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Thesis Creator <em>by McGarvs</em></a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Thesis Creator</a></li>
+								<li><a href="about.html">About</a></li>
+                <li><a href="https://johnmcgarvey.com/apworld/student/thesiscreator.html">Old Thesis Creator</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Gigantic Heading -->
+				<section class="wrapper style2">
+					<div class="container">
+						<header class="major">
+							<h2>Steps to create your Thesis Statement</h2>
+							<p>Follow the steps below to help you write your own thesis.</p>
+              <button id="exampleThesisButton" class="button">Try an Example</button>
+						</header>
+					</div>
+				</section>
+
+			<!-- Steps -->
+      <section id="step1" class="wrapper style1">
+        <div class="container">
+          <h2>1. The Prompt</h2>
+          <p> What is the essay's prompt? Keep this prompt in mind as you go through the steps below to make sure that you properly address it.</p>
+          <label>
+            Write your essay's prompt:
+            <textarea id="promptEntry" name="prompt" placeholder = "e.g. Was the New Deal of the 1930s a liberal plan to create a welfare state in America, or was it a conservative defense of American capitalism?"></textarea>
+          </label>
+        </div>
+      </section>
+      
+      <section id="step2" class="wrapper style2">
+        <div class="container">
+          <h2>2. The Title</h2>
+          <p>
+            The title or &ldquo;topic&rdquo; of your essay is the general category
+            your essay is about. Either write the title your teacher has assigned or
+            the title you have chosen in the space provided. What do you have an opinion
+            about? What are some things that interest you? Topics are just general
+            categories--school, fishing, parenting, hunting, cars, women's rights,
+            racial issues, the law, etc&hellip;
+          </p>
+          <label>
+            Write the topic of your essay:
+            <textarea id="titleEntry" name="title" placeholder = "e.g. New Deal: Welfare State or Savior of Capitalism"></textarea>
+          </label>          
+        </div>
+      </section>
+      
+      <section id="step3" class="wrapper style1">
+        <div class="container">
+          <h2>3. The Position </h2>
+          <p>
+            What is one thing about your topic that you believe to be
+            true, and that you wish to argue?
+            You may already have a &ldquo;position&rdquo; in mind, or you may just have
+            a general topic you know you wish to work with.
+            If you do not yet have a position, making a cluster or a map with
+            your topic in the center is a good way to help yourself find a position.
+            Another good way is to begin a free write, &ldquo;I'm supposed to
+            write an essay about&hellip; &rdquo; and see where it takes
+            you.
+          </p>
+          <label>
+            Write your position:
+            <textarea id="positionEntry" name="position" placeholder = "e.g. The New Deal is best understood as a defense of American capitalism"></textarea>
+          </label>          
+        </div>
+      </section>
+      
+      <section id="step4" class="wrapper style2">
+        <div class="container">
+          <h2>4. The Qualification</h2>
+          <p>
+            Is what you say always true always?<br>
+            Are there exceptions?<br>
+            Are there good reasons why your position may have a down side?<br>
+            How can you make your position have a reality check?<br>
+            What general reasons why your position may have problems can you admit up
+            front?<br>
+            To make absolute statements usually causes your essay's thesis to seem
+            foolishly simplistic. Get real!.<br>
+            Here's a trick: begin your qualification with a word like &ldquo;although&rdquo;
+            or &ldquo;It is true that...&rdquo; Don't worry if it's not a
+            complete sentence.<br>
+          </p>
+          <label for="qualificationEntry">
+            Write your qualification:
+            <textarea id="qualificationEntry" name="qualification" placeholder = "e.g. Despite its work relief elements and large government programs,"></textarea>
+          </label>          
+        </div>
+      </section>
+      
+      <section id="step5" class="wrapper style1">
+        <div class="container">
+          <h2>5. The Reason</h2>
+          <p>
+            In general why do you believe your position to be correct in spite of your qualification?<br>
+            What is the over all good to be gained by agreeing with your position? <br>
+            This is a general statement; your specific reasons will follow in the body of your essay.
+          </p>
+          <label for="reasonEntry">
+            Write your reason:
+            <textarea id="reasonEntry" name="reason" placeholder = "e.g. because its main programs attempted to create a stable environment for private enterprise."></textarea>
+          </label>
+              <!-- TODO: Restyle Create Thesis Button -->
+          <button id="createThesisButton" class="button" disabled>Create Thesis</button>
+        </div>
+      </section>
+      
+      <!-- Final Step -->
+			<section id="step6" class="wrapper style1 hidden">
+        <div class="container">
+          <h2>6. The Thesis. </h2>
+          <p>
+            In one or two sentences, present your thesis, including a qualification, a reason, and a position.
+            The classic, traditional way of combining is to first present your qualification.
+            This immediately demonstrates your interest in accuracy. Then present your
+            general reason which demonstrates your thinking process, and finally the
+            punch line&ndash;your position.
+          </p>
+          <p>
+            Edit your thesis statement so that the parts of the thesis flow smoothly,
+            check for proper grammar and standard spelling.
+          </p>
+          <h3>Your Prompt: </h3><p id="promptDisplay"></p>
+          <h3>Your Title: </h3><p id="titleDisplay"></p>
+          <label for="thesisEntry">
+            Edit your draft thesis: 
+            <textarea id="thesisEntry" name="thesis" placeholder="e.g. Despite its work relief elements and large government programs, the New Deal is best understood as a defense of American capitalism because its main programs attempted to create a stable environment for private enterprise."></textarea>
+          </label>
+          <button id="backButton" class="button">Go Back</button>
+          <button id="downloadButton" class="button">Download .docx</button>
+        </div>
+      </section>
+
+			<!-- Footer -->
+				<div id="footer">
+
+					<!-- Icons -->
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li> -->
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<!-- <li>&copy; John McGarvey. All rights reserved</li> -->
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+      <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"
+        integrity="sha384-ph76mR0W+Z/3+JTfCgW7I+2WZrKUE1M2EabdJVneuKwpssRuQggPhzQJ3oDectWZ"
+        crossorigin="anonymous">
+      </script>
+      <script
+        src="https://unpkg.com/docx@8.5.0/build/index.umd.js"
+        integrity="sha384-4xaIisuLEy2lo2HkB2C4rEf7v8jbTb2kuogX6TkuEt9feTWKBSFSOzsqNNbV+sKh"
+        crossorigin="anonymous">
+      </script>
+			<script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous">
+      </script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+      <script src="assets/js/thesis.js"></script>
+
+	</body>
+</html>
